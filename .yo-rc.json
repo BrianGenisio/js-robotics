@@ -1,0 +1,11 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "JavaScript Robotics? Not a bad idea.",
+    "packageVersion": "0.0.0",
+    "revealTheme": "sky",
+    "useSass": false,
+    "deployToGithubPages": true,
+    "githubUsername": "BrianGenisio",
+    "githubRepository": "js-robotics-lightning-talk"
+  }
+}
