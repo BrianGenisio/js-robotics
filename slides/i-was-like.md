@@ -1,0 +1,3 @@
+##  I was like...
+
+![scratching head](assets/headscratch.jpg)
