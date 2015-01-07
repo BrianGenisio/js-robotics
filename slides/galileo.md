@@ -1,3 +1,3 @@
 ##  Galileo
 
-![Galileo](assets/galileo.jpg)
+![Galileo](assets/Galileo.jpg)
