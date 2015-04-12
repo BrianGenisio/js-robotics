@@ -25,8 +25,11 @@
     "imp.md",
     "bean.md",
     "pinnochio.md",
-    "example-code.md",
-    "racer.md",
     "community.md",
-    "javascript-robotics-is-a-good-idea.md"
+    "lets-look.md",
+    "control-some-servos.md",
+    "javascript-robotics-is-a-good-idea.md",
+    "expand-to-a-car.md",
+    "and-control-the-car.md",
+    "or-let-the-car-drive-iteself.md"
 ]
