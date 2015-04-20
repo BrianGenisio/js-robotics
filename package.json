@@ -8,7 +8,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-contrib-copy": "^0.7.0",
     "grunt-contrib-jshint": "^0.10.0",
-    "load-grunt-tasks": "^1.0.0", 
+    "load-grunt-tasks": "^1.0.0",
     "grunt-build-control": "^0.2.2",
     "grunt-coffeelint": "0.0.13"
   },
@@ -18,5 +18,10 @@
   },
   "scripts": {
     "test": "grunt test"
+  },
+  "dependencies": {
+    "imp-io": "^0.2.1",
+    "j5-songs": "0.0.6",
+    "johnny-five": "^0.8.58"
   }
 }
