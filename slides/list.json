@@ -45,11 +45,13 @@
     "some-components.md",
     "not-just-movement.md",
     "led-wiring.md",
+    "understanding-pwm.md",
     "rgb.md",
     "play-a-song.md",
     "piezo-wiring.md",
     "not-just-arduino.md",
     "imp-wiring.md",
+    "imp-architecture.md",
     "tip-of-the-iceberg.md",
     "javascript-robotics-is-a-good-idea.md",
     "learn-more.md"
