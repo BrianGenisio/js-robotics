@@ -1,5 +1,6 @@
 [
     "index.md",
+    "who-is-brian.md",
     "bad-idea.md",
     "i-was-like.md",
     "he-was-like.md",
@@ -32,12 +33,16 @@
     "servo-wiring.md",
     "expand-to-a-car.md",
     "and-control-the-car.md",
+    "reflectance-arrays.md",
+    "reflectance-arrays-turn-left.md",
+    "reflectance-arrays-turn-right.md",
     "or-let-the-car-drive-iteself.md",
     "use-motors-instead.md",
     "omnibot-wheels.md",
     "omnibot-vectors.md",
     "omnibot-shield.md",
     "and-drive-the-omnibot.md",
+    "some-components.md",
     "not-just-movement.md",
     "led-wiring.md",
     "rgb.md",
@@ -45,5 +50,7 @@
     "piezo-wiring.md",
     "not-just-arduino.md",
     "imp-wiring.md",
-    "javascript-robotics-is-a-good-idea.md"
+    "tip-of-the-iceberg.md",
+    "javascript-robotics-is-a-good-idea.md",
+    "learn-more.md"
 ]
