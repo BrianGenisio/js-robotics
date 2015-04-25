@@ -1,4 +1,4 @@
-##  Or Let the Car Drive
+##  Let the Car Drive
 
 <style>
 .reveal pre code {
