@@ -16,7 +16,7 @@ require('tty').setRawMode(true);
 
 board.on("ready", function() {
 
-  var car = new Car(five, 11, 12);
+  var car = new Car(five, 11, 7);
 
   var keyMap = {
     up:    "forward",

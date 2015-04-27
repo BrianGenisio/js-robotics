@@ -12,7 +12,7 @@ var five = require("johnny-five"),
 
 board.on("ready", function() {
   var rightWheel = new five.Servo({pin: 11, type: "continuous"});
-  var leftWheel = new five.Servo({pin: 12, type: "continuous"});
+  var leftWheel = new five.Servo({pin: 7, type: "continuous"});
 
   rightWheel.cw();
   leftWheel.ccw();
