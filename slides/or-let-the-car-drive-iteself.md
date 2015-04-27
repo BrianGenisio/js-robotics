@@ -12,7 +12,7 @@ var five = require("johnny-five"),
     board = new five.Board(); 
 
 board.on("ready", function() {
-  var car = new Car(five, 11, 12);
+  var car = new Car(five, 11, 7);
 
   var eyes = new five.IR.Reflect.Array({
     emitter: 13,

@@ -15,7 +15,7 @@ board.on("ready", function() {
   //});
 
   //piezo.play(songs.load('mario-intro'));
-  //piezo.play(songs.load('starwars-theme'));
+  piezo.play(songs.load('starwars-theme'));
 
   this.repl.inject({
     piezo: piezo
