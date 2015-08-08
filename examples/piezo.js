@@ -4,7 +4,7 @@ var five = require("johnny-five"),
 
 board.on("ready", function() {
   
-  var piezo = new five.Piezo(11);
+  var piezo = new five.Piezo(8);
 
   //piezo.tone(440, 500);
 
@@ -15,7 +15,7 @@ board.on("ready", function() {
   //});
 
   //piezo.play(songs.load('mario-intro'));
-  //piezo.play(songs.load('starwars-theme'));
+  piezo.play(songs.load('starwars-theme'));
 
   this.repl.inject({
     piezo: piezo

@@ -22,6 +22,7 @@
   "dependencies": {
     "imp-io": "^0.2.1",
     "j5-songs": "0.0.6",
-    "johnny-five": "^0.8.58"
+    "johnny-five": "^0.8.58",
+    "spark-io": "^0.6.1"
   }
 }

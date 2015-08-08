@@ -12,7 +12,7 @@ var five = require("johnny-five"),
 
 board.on("ready", function() {
   
-  var led = five.Led(11);
+  var led = five.Led(13);
 
   // led.on();
   // led.off();

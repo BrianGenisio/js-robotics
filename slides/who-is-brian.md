@@ -1,4 +1,4 @@
-##  Who is Brian?
+##  Who is [@BrianGenisio](http://twitter.com/BrianGenisio)?
 
 - Co-organizer of [SEM.js](http://semjs.org)
 - Team Player at [CareEvolution](http://letsfixhealthcare.com)
