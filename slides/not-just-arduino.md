@@ -1,4 +1,4 @@
-##  Not Just Arduino (Imp)
+##  Not Just Arduino (Particle)
 
 <style>
 .reveal pre code {
@@ -8,17 +8,18 @@
 
 ```js
 var five = require("johnny-five");
-var Imp = require("imp-io");
+var Spark = require("spark-io");
 
 var board = new five.Board({
-  io: new Imp({
-    agent: "1piIF7OnOX0s"
+  io: new Spark({
+    token: "API_TOKEN",
+    deviceId: "DEVICE_ID" 
   })
 });
 
 board.on("ready", function() {
-  var led = new five.Led(9);
-  var motion = new five.IR.Motion(7);
+  var led = new five.Led("D7");
+  var motion = new five.Motion("D6");
 
   motion.on("motionstart", function() {
     led.on();
