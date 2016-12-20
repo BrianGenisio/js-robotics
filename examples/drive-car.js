@@ -1,15 +1,15 @@
-var five = require("johnny-five"),
-    Car = require("./car"),
-    board = new five.Board(),
-    stdin = process.openStdin(); 
-
-require('tty').setRawMode(true);    
+const five = require("johnny-five");
+const Car = require("./car");
+const board = new five.Board();
+const stdin = process.openStdin();
 
 board.on("ready", function() {
+  const car = new Car(five,
+    {pwm: 9, dir: 10},
+    {pwm: 11, dir: 12}
+  );
 
-  var car = new Car(five, 11, 7);
-
-  var keyMap = {
+  const keyMap = {
     up:    "forward",
     down:  "reverse",
     left:  "left",
@@ -17,7 +17,7 @@ board.on("ready", function() {
     space: "stop"
   };
 
-  stdin.on('keypress', function (chunk, key) {
+  stdin.on('keypress', (chunk, key) => {
     if(keyMap[key.name]) {
       car[keyMap[key.name]]();
     }

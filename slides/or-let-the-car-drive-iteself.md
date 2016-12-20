@@ -7,14 +7,17 @@
 </style>
 
 ```js
-var five = require("johnny-five"),
-    Car = require("./car"),
-    board = new five.Board(); 
+const five = require("johnny-five");
+const Car = require("./car");
+const board = new five.Board(); 
 
 board.on("ready", function() {
-  var car = new Car(five, 11, 7);
+  const car = new Car(five,
+    {pwm: 9, dir: 10},
+    {pwm: 11, dir: 12}
+  );
 
-  var eyes = new five.IR.Reflect.Array({
+  const eyes = new five.IR.Reflect.Array({
     emitter: 13,
     pins: ["A0", "A1", "A2", "A3", "A4", "A5"],
     autoCalibrate: true
@@ -22,14 +25,15 @@ board.on("ready", function() {
 
   eyes
     .enable()
-    .on("line", function(err, line) {
-      if (line < 1000) {
-          car.left();
-      } else if (line > 4000) {
-          car.right();
-      } else {
-          car.forward();
-      }
+    .on("line", err => {
+        const line = this.line;
+        if (line < 1000) {
+            car.left();
+        } else if (line > 4000) {
+            console.log("right");
+        } else {
+            console.log("forward");
+        }
     });
 });
 ```

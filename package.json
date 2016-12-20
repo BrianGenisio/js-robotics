@@ -4,13 +4,13 @@
   "private": true,
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-build-control": "^0.2.2",
+    "grunt-coffeelint": "0.0.13",
     "grunt-contrib-connect": "^0.9.0",
-    "grunt-contrib-watch": "^0.6.1",
     "grunt-contrib-copy": "^0.7.0",
     "grunt-contrib-jshint": "^0.10.0",
-    "load-grunt-tasks": "^1.0.0",
-    "grunt-build-control": "^0.2.2",
-    "grunt-coffeelint": "0.0.13"
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^1.0.0"
   },
   "engines": {
     "node": ">=0.10.0",
@@ -20,10 +20,11 @@
     "test": "grunt test"
   },
   "dependencies": {
+    "coffeelint": "^1.16.0",
     "connect": "^3.4.0",
     "imp-io": "^0.2.1",
     "j5-songs": "0.0.6",
-    "johnny-five": "^0.8.58",
-    "spark-io": "^0.6.1"
+    "johnny-five": "^0.10.0",
+    "particle-io": "^0.6.1"
   }
 }
