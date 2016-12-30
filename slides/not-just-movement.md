@@ -7,12 +7,10 @@
 </style>
 
 ```js
-var five = require("johnny-five"),
-    board = new five.Board()
+const five = require("johnny-five");
 
-board.on("ready", function() {
-  
-  var led = five.Led(13);
+new five.Board().on("ready", function() {
+  const led = five.Led(11);
 
   // led.on();
   // led.off();
@@ -21,9 +19,6 @@ board.on("ready", function() {
   // led.pulse();
   // led.stop();
 
-  this.repl.inject({
-    led: led
-  });
-
+  this.repl.inject({led});
 });
 ```
