@@ -1,10 +1,8 @@
-var five = require("johnny-five"),
-    songs = require("j5-songs"),
-    board = new five.Board();
+const five = require("johnny-five");
+const songs = require("j5-songs");
 
-board.on("ready", function() {
-  
-  var piezo = new five.Piezo(8);
+new five.Board().on("ready", function() {
+  const piezo = new five.Piezo(3);
 
   //piezo.tone(440, 500);
 
@@ -14,11 +12,8 @@ board.on("ready", function() {
   //  tempo: 100
   //});
 
-  //piezo.play(songs.load('mario-intro'));
-  piezo.play(songs.load('starwars-theme'));
+  piezo.play(songs.load('mario-intro'));
+  //piezo.play(songs.load('starwars-theme'));
 
-  this.repl.inject({
-    piezo: piezo
-  });
-
+  this.repl.inject({piezo, songs});
 });

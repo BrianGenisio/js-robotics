@@ -1,10 +1,8 @@
-var five = require("johnny-five"),
-    board = new five.Board()
+const five = require("johnny-five");
 
-board.on("ready", function() {
-  
-  var rgb = new five.Led.RGB({
-    pins: [9, 10, 11],
+new five.Board().on("ready", function() {
+  const rgb = new five.Led.RGB({
+    pins: [6, 9, 10],
     isAnode: true
   });
 
@@ -16,11 +14,7 @@ board.on("ready", function() {
   // rgb.strobe();
   // rgb.stop();
 
-
-  this.repl.inject({
-    rgb: rgb
-  });
-
+  this.repl.inject({rgb});
 });
 
 

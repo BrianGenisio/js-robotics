@@ -1,29 +1,28 @@
-const speed = 200;
-
 class Car {
-  constructor (five, rightPins, leftPins) {
+  constructor (five, rightPins, leftPins, speed = 255) {
+    this.speed = speed;
     this.rightWheel = new five.Motor({pins: rightPins, invertPWM: true});
     this.leftWheel = new five.Motor({pins: leftPins, invertPWM: true});
   }
 
   forward() {
-    this.rightWheel.rev(speed);
-    this.leftWheel.fwd(speed);
+    this.rightWheel.rev(this.speed);
+    this.leftWheel.fwd(this.speed);
   }
 
   reverse() {
-    this.rightWheel.fwd(speed);
-    this.leftWheel.rev(speed);
+    this.rightWheel.fwd(this.speed);
+    this.leftWheel.rev(this.speed);
   }
 
   right() {
-    this.rightWheel.fwd(speed);
-    this.leftWheel.fwd(speed);
+    this.rightWheel.fwd(this.speed);
+    this.leftWheel.fwd(this.speed);
   }
 
   left() {
-    this.rightWheel.rev(speed);
-    this.leftWheel.rev(speed);
+    this.rightWheel.rev(this.speed);
+    this.leftWheel.rev(this.speed);
   }
 
   stop() {
