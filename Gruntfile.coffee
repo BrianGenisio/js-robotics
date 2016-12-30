@@ -88,7 +88,7 @@ module.exports = (grunt) ->
                 message: 'Built from %sourceCommit% on branch %sourceBranch%'
             pages:
                 options:
-                    remote: 'git@github.com:BrianGenisio/js-robotics-lightning-talk.git'
+                    remote: 'git@github.com:BrianGenisio/js-robotics.git'
                     branch: 'gh-pages'
         
 
