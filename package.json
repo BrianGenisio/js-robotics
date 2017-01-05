@@ -26,6 +26,6 @@
     "imp-io": "^0.2.1",
     "j5-songs": "0.0.6",
     "johnny-five": "^0.10.0",
-    "particle-io": "^0.6.1"
+    "particle-io": "^0.14.0"
   }
 }
