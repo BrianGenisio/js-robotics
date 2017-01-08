@@ -1,7 +1,6 @@
-var five = require("johnny-five"),
-    board = new five.Board()
+const five = require("johnny-five");
 
-board.on("ready", function() {
+new five.Board().on("ready", () => {
   this.rightWheel = new five.Motor({
     pins: { pwm: 9, dir: 10 },
     invertPWM: true
@@ -15,12 +14,12 @@ board.on("ready", function() {
   rightWheel.rev(255);
   leftWheel.fwd(255);
 
-  setTimeout(function() {
-    rightWheel.ccw(255);
-    leftWheel.fwd(255);
+  setTimeout(() => {
+    rightWheel.fwd(255);
+    leftWheel.rev(255);
   }, 1000);
 
-  setTimeout(function() {
+  setTimeout(() => {
     rightWheel.stop();
     leftWheel.stop();
   }, 2000);

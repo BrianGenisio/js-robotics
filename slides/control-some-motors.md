@@ -25,8 +25,8 @@ new five.Board().on("ready", () => {
   leftWheel.fwd(255);
 
   setTimeout(() => {
-    rightWheel.ccw(255);
-    leftWheel.fwd(255);
+    rightWheel.fwd(255);
+    leftWheel.rev(255);
   }, 1000);
 
   setTimeout(() => {
