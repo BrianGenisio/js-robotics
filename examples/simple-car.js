@@ -1,12 +1,12 @@
 const five = require("johnny-five");
 
 new five.Board().on("ready", () => {
-  this.rightWheel = new five.Motor({
+  const rightWheel = new five.Motor({
     pins: { pwm: 9, dir: 10 },
     invertPWM: true
   });
 
-  this.leftWheel = new five.Motor({
+  const leftWheel = new five.Motor({
     pins: { pwm: 11, dir: 12 },
     invertPWM: true
   });

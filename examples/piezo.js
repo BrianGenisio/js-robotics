@@ -12,8 +12,8 @@ new five.Board().on("ready", function() {
   //  tempo: 100
   //});
 
-  piezo.play(songs.load('mario-intro'));
-  //piezo.play(songs.load('starwars-theme'));
+  //piezo.play(songs.load('mario-intro'));
+  piezo.play(songs.load('starwars-theme'));
 
   this.repl.inject({piezo, songs});
 });
